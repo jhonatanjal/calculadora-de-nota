@@ -1,0 +1,34 @@
+.view {
+    text-align: center;
+}
+
+.titulo-principal {
+    text-align: center;
+}
+
+.campo-nota1, .campo-nota2 {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.nota {
+    width: 10em;
+    margin-left: .2em;
+    margin-right: 1em;
+}
+
+.peso {
+    width: 4em;
+    margin-left: .2em;
+    margin-right: 1em;
+}
+
+.bnt-calcula-nota {
+    text-align: center;
+}
+
+.bnt-calcula-nota button {
+    width: 100px;
+    height: 3em;
+}
