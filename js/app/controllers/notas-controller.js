@@ -16,7 +16,7 @@ class NotasController {
         }
         let nota2 = {
             peso: $('#peso-nota2').value,
-            nota: $('#peso-nota2').value
+            nota: $('#nota2').value
         }
         let result = this._calculaMedia(nota1, nota2);
         this.resultadoView.update(result);
