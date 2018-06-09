@@ -31,7 +31,7 @@ class NotasController {
             resultado = this._calculaNotaNecessaria(nota1);
         } else {
             let nota = ((nota1.nota * nota1.peso) + (nota2.nota * nota2.peso));
-    
+
             resultado = {
                 nota: nota.toPrecision(3),
                 mensagem: 'Sua Nota é'
