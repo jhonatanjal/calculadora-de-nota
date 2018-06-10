@@ -12,12 +12,12 @@ class NotasController {
 
         let nota1 = {
             peso: $('#peso-nota1').value / 10,
-            nota: $('#nota1').value
+            valor: $('#nota1').value
         }
 
         let nota2 = {
             peso: $('#peso-nota2').value / 10,
-            nota: $('#nota2').value
+            valor: $('#nota2').value
         }
 
         let result = this._calculaMedia(nota1, nota2);
@@ -27,10 +27,10 @@ class NotasController {
     _calculaMedia(nota1, nota2) {
         var resultado = {};
 
-        if (nota2.nota.length == 0) {
+        if (nota2.valor.length == 0) {
             resultado = this._calculaNotaNecessaria(nota1);
         } else {
-            let nota = ((nota1.nota * nota1.peso) + (nota2.nota * nota2.peso));
+            let nota = ((nota1.valor * nota1.peso) + (nota2.valor * nota2.peso));
 
             resultado = {
                 nota: nota.toPrecision(3),
@@ -42,8 +42,8 @@ class NotasController {
     }
 
     _calculaNotaNecessaria(nota1) {
-        let media = 6;
-        let nota = (media - (nota1.nota * nota1.peso)) / (1 - nota1.peso);
+        const media = 6;
+        let nota = (media - (nota1.valor * nota1.peso)) / (1 - nota1.peso);
 
         let resultado = {
             nota: nota.toPrecision(3),
