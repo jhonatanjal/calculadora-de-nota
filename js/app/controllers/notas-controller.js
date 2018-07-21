@@ -1,6 +1,6 @@
 class NotasController {
     constructor() {
-        let view = document.querySelector('.view')
+        let view = document.querySelector('#view')
         this.inputNotaView = new InputNotaView(view);
         this.resultadoView = new ResultadoView(view);
 

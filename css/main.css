@@ -1,4 +1,4 @@
-.view {
+.container {
     text-align: center;
 }
 
@@ -6,10 +6,15 @@
     text-align: center;
 }
 
-.campo-nota1, .campo-nota2 {
+.campo-nota {
     display: flex;
     justify-content: center;
     margin: 1em;
+}
+
+.campo-nota label {
+    display: block;
+    margin: auto 2px;
 }
 
 .nota {
